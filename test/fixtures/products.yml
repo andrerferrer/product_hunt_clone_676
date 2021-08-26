@@ -1,0 +1,14 @@
+product_one:
+  name: 'First Product'
+  tagline: 'A nice tagline for the First Product'
+
+product_two:
+  name: 'Second Product'
+  tagline: 'A nice tagline for the Second Product'
+
+# Factory bot (Factory Girl) does it for you in rspec
+<% 1.upto(5) do |i| %>
+product_<%= i %>:
+  name: <%= Faker::Company.name %>
+  tagline: <%= Faker::Company.catch_phrase %>
+<% end %>

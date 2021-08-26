@@ -1,0 +1,4 @@
+player_one:
+  email: 'player@one.com'
+  first_name: 'player'
+  last_name: 'one'
